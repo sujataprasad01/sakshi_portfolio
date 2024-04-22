@@ -10,7 +10,7 @@ function Main() {
     <div className={styless.main}>
       <div className={styless.leftside}>
         <h1>Hello , Sakshi here</h1>
-        <h1>Creating dynamic and responsive websites using HTML, CSS, and React, currently in 2nd year of CSE RCOGN, feel free to contact me</h1>
+        <h2>Creating dynamic and responsive websites using HTML, CSS, and React, currently in 2nd year of COMPUTER SCIENCE ENGINEERING, feel free to contact me</h2>
         <Link to='/contact' className={styless.contactBtn}>Let's Connect</Link>
       </div>
       <div className={styless.rightside}>
