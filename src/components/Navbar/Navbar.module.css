@@ -1,0 +1,108 @@
+*{
+    color: white;
+    margin: 0;
+    /* background-color: rgb(2, 71, 114); */
+}
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    z-index: 2;
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    /* color: black; */
+    color: white;
+background-color: rgb(2, 71, 114);
+    & a{
+        text-decoration: none;
+    }
+}
+.menu{
+    text-decoration: none;
+    display: flex;
+    /* flex-direction: row; */ 
+    list-style: none;
+}
+.menuitems{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 4rem;
+}
+.menuitems a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* .menuBtn{
+    display: block;
+} */
+
+@media screen and (max-width:830px) {
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+        text-decoration: none;
+        list-style: none;
+        align-items: flex-end;
+        /* align-items: flex-end; */
+z-index: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .menuBtn{
+        display:block;
+        /* width: 2rem;
+        height: 2rem; */
+        cursor:pointer;
+    }
+    .menuitems{
+        display: none;
+        text-decoration: none;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-right: 2rem; */
+        /* padding: 10px; */
+        background:  rgb(2, 71, 114);
+        background:linear-gradient(0deg, rgba(25,55,109,0.2)0%,  rgb(2, 71, 114)100%);
+        border-radius: 10%;
+        gap: 0;
+        & li{
+           align-items: center;
+           justify-content: center;
+           margin-right: 2rem;
+           margin-left: 0;
+        }
+    }
+}
+.menuOpen{
+    display: flex;
+    z-index: 1;
+}
+
+@media screen and (min-width:830px){
+    .menu{
+        text-decoration: none;
+        list-style: none;
+    }
+    .menuitems{
+        text-decoration: none;
+        list-style: none;
+    }
+    .menuBtn{
+    display:none;
+}
+}
